@@ -13,7 +13,7 @@ const Path = () => {
       <Router>
         <Routes>
           <Route path="/" element={<DataPertanianDaerah />} />
-          <Route path="/toko-prtanian" element={<TokoPertanian />} />
+          <Route path="/toko-pertanian" element={<TokoPertanian />} />
           <Route path="/info-pertanian" element={<InfoPertanian />} />
         </Routes>
       </Router>

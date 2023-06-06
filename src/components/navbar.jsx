@@ -89,7 +89,7 @@ const Navbar = ()=>{
                             Info Pertanian
                             </button>
                         </li>
-                        <li className="text-black" onClick={()=>window.location.href = "/toko-prtanian"}>
+                        <li className="text-black" onClick={()=>window.location.href = "/toko-pertanian"}>
                             <button className="hover:underline underline-offset-auto">
                             Toko Pertanian
                             </button>
