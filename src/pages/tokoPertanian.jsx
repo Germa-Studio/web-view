@@ -59,7 +59,7 @@ export default function InfoPertanian() {
             <MainCard transparent row>
                 <MainCard transparent noPadding>
                     <MainCard row transparent noPadding>
-                        <p className='font-bold md:pr-40'>Nama Penjual</p>
+                        <p className='font-bold pl-12 md:pr-28'>Nama Penjual</p>
                         <p className='font-bold pl-5 md:pr-40'>Kecamatan</p>
                         <p className='font-bold md:pr-64'>Produk</p>
                         <p className='font-bold pl-3'>Kontak Telepon</p>
