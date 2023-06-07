@@ -1,35 +1,33 @@
 import { useState, useEffect } from "react";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faUser } from '@fortawesome/free-solid-svg-icons';
-// import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = ()=>{
+const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
 
+    // eslint-disable-next-line no-unused-vars
     const toggleDropdown = (dropdown) => {
         setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
     };
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-    const handleScroll = () => {
-        if (window.scrollY > 0) {
-        setIsScrolled(true);
-        } else {
-        setIsScrolled(false);
-        }
-    };
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
 
-    window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
 
-    return () => {
-        window.removeEventListener('scroll', handleScroll);
-    };
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
-    
-    return(
+
+    return (
         <nav className={`w-full shadow fixed top-0 left-0 z-50 px-6 md:px-0 ${isScrolled ? 'bg-white' : 'bg-white'}`}>
             <div className="justify-between bg-white mx-auto lg:max-w-7xl md:items-center md:flex">
                 <div className="bg-white">
@@ -79,21 +77,21 @@ const Navbar = ()=>{
                 <div>
                     <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                        <li className="text-black" onClick={()=>window.location.href = "/"}>
-                            <button className="hover:underline underline-offset-auto">
-                             Data Pertanian Daerah
-                            </button>
-                        </li>
-                        <li className="text-black" onClick={()=>window.location.href = "/info-pertanian"}>
-                            <button className="hover:underline underline-offset-auto">
-                            Info Pertanian
-                            </button>
-                        </li>
-                        <li className="text-black" onClick={()=>window.location.href = "/toko-pertanian"}>
-                            <button className="hover:underline underline-offset-auto">
-                            Toko Pertanian
-                            </button>
-                        </li>
+                            <li className="text-black" onClick={() => window.location.href = "/"}>
+                                <button className="hover:underline underline-offset-auto">
+                                    Data Pertanian Daerah
+                                </button>
+                            </li>
+                            <li className="text-black" onClick={() => window.location.href = "/info-pertanian"}>
+                                <button className="hover:underline underline-offset-auto">
+                                    Info Pertanian
+                                </button>
+                            </li>
+                            <li className="text-black" onClick={() => window.location.href = "/toko-pertanian"}>
+                                <button className="hover:underline underline-offset-auto">
+                                    Toko Pertanian
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
