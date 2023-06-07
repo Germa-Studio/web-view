@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar"
@@ -13,7 +14,7 @@ const Path = () => {
       <Router>
         <Routes>
           <Route path="/" element={<DataPertanianDaerah />} />
-          <Route path="/toko-prtanian" element={<TokoPertanian />} />
+          <Route path="/toko-pertanian" element={<TokoPertanian />} />
           <Route path="/info-pertanian" element={<InfoPertanian />} />
         </Routes>
       </Router>
