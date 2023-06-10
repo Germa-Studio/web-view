@@ -6,7 +6,7 @@ const Footer = () =>{
                 <img src="/image/logo.png" width={50} alt="Logo" />
                 <div className="text-black text-base font-bold text-center pl-3">
                     {/* <span className="pr-3">Logo</span> */}
-                    <span>&copy; 2023 Teman Tani</span>
+                    <span>&copy;2023 SIKETAN</span>
                 </div>
             </div>
         </footer>

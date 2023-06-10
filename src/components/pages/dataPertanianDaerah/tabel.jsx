@@ -6,7 +6,6 @@ const LaporanPenyuluh = () => {
     const [filters, setFilters] = useState({
         kecamatan: "",
         desa: "",
-        namaPetani: "",
         komoditas: "",
         jenisTanaman: "",
         musimTanam: "",
@@ -30,7 +29,6 @@ const LaporanPenyuluh = () => {
         id: 1,
         kecamatan: "Kecamatan A",
         desa: "Desa 1",
-        namaPetani: "John Doe",
         komoditas: "Padi",
         jenisTanaman: "Tumbuhan",
         musimTanam: "Musim 1",
@@ -45,7 +43,6 @@ const LaporanPenyuluh = () => {
         id: 2,
         kecamatan: "AdasaA",
         desa: "Wonorejo",
-        namaPetani: "John Doe",
         komoditas: "Padi",
         jenisTanaman: "Tumbuhan",
         musimTanam: "Musim 1",
@@ -60,7 +57,6 @@ const LaporanPenyuluh = () => {
         id: 3,
         kecamatan: "testing",
         desa: "Klakah",
-        namaPetani: "John Doe",
         komoditas: "Padi",
         jenisTanaman: "Tumbuhan",
         musimTanam: "Musim 1",
@@ -92,13 +88,12 @@ const LaporanPenyuluh = () => {
         <div className="flex justify-center pt-12 w-full">
             <div className="w-[96%] shadow-xl rounded-lg overflow-x-auto overflow-y-auto">
                 <div className="pt-10">
-                    <h2 className="text-center mb-4">STATISTIK PERTUMBUHAN PERTANIAN DALAM 4 TAHUN</h2>
+                    <h2 className="text-center mb-4">STATISTIK PERTUMBUHAN PERTANIAN DALAM 1 TAHUN</h2>
                     <table className="w-full">
                         <thead className="bg-slate-100">
                             <tr>
                             <th className="px-4 py-2 truncate border">Kecamatan</th>
                             <th className="px-4 py-2 truncate border">Desa</th>
-                            <th className="px-4 py-2 truncate border">Nama Petani</th>
                             <th className="px-4 py-2 truncate border">Komoditas</th>
                             <th className="px-4 py-2 truncate border">Jenis Tanaman</th>
                             <th className="px-4 py-2 truncate border">Musim Tanam</th>
@@ -135,21 +130,6 @@ const LaporanPenyuluh = () => {
                                     onChange={(e) => handleFilterChange(e, "desa")}
                                     className="pl-8 pr-4 py-2.5 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600"
                                     placeholder="Filter Desa"
-                                    />
-                                    <FontAwesomeIcon
-                                    icon={faFilter}
-                                    className="text-gray-500 ml-2"
-                                    />
-                                </div>
-                            </td>
-                            <td className="px-4 py-2 border">
-                                <div className="flex items-center">
-                                    <input
-                                    type="text"
-                                    value={filters.namaPetani}
-                                    onChange={(e) => handleFilterChange(e, "namaPetani")}
-                                    className="pl-8 pr-4 py-2.5 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600"
-                                    placeholder="Filter Nama Petani"
                                     />
                                     <FontAwesomeIcon
                                     icon={faFilter}
@@ -297,7 +277,6 @@ const LaporanPenyuluh = () => {
                             <tr key={item.id}>
                                 <td className="px-4 py-2 border">{item.kecamatan}</td>
                                 <td className="px-4 py-2 border">{item.desa}</td>
-                                <td className="px-4 py-2 border">{item.namaPetani}</td>
                                 <td className="px-4 py-2 border">{item.komoditas}</td>
                                 <td className="px-4 py-2 border">{item.jenisTanaman}</td>
                                 <td className="px-4 py-2 border">{item.musimTanam}</td>
