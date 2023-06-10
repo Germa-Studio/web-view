@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import MainCard from "../components/MainCard"
 import PieChart from "../components/pages/dataPertanianDaerah/pieChart"
 import MatrixChart from "../components/pages/dataPertanianDaerah/matrixChart"
@@ -12,7 +12,7 @@ export default function DataPertanianDaerah() {
         <PieChart/>
       </MainCard>
       <MainCard transparent  width="60%">
-        <h2 className="text-center">STATISTIK PERTUMBUHAN PERTANIAN DALAM 4 TAHUN</h2>
+        <h2 className="text-center">STATISTIK PERTUMBUHAN PERTANIAN DALAM 1 TAHUN</h2>
         <MatrixChart/>
       </MainCard>
     </MainCard>
