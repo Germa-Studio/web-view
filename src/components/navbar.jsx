@@ -95,7 +95,7 @@ const Navbar = () => {
           >
             <ul className="text-green-primary items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li onClick={() => (window.location.href = "/")}>
-                <button className="hover:underline underline-offset-auto">
+                <button className="hover:font-bold hover:underline underline-offset-auto">
                   <span className="flex">
                     <img
                       src="/image/icon-data-pertanian.png"
@@ -107,7 +107,7 @@ const Navbar = () => {
                 </button>
               </li>
               <li onClick={() => (window.location.href = "/info-pertanian")}>
-                <button className="hover:underline underline-offset-auto">
+                <button className="hover:font-bold hover:underline underline-offset-auto">
                   <span className="flex">
                     <img
                       src="/image/icon-info-pertanian.png"
@@ -119,7 +119,7 @@ const Navbar = () => {
                 </button>
               </li>
               <li onClick={() => (window.location.href = "/toko-pertanian")}>
-                <button className="hover:underline underline-offset-auto">
+                <button className="hover:font-bold hover:underline underline-offset-auto">
                   <span className="flex">
                     <img
                       src="/image/icon-toko-pertanian.png"

@@ -5,7 +5,7 @@ import MatrixChart from "../components/pages/dataPertanianDaerah/matrixChart";
 import Tabel from "../components/pages/dataPertanianDaerah/tabel";
 export default function DataPertanianDaerah() {
   return (
-    <section>
+    <section className="pb-5">
       <MainCard transparent noPadding>
         <MainCard transparent noPadding row center>
           <MainCard transparent width="30%">

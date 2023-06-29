@@ -6,7 +6,7 @@ import InputCrud from "../components/pages/infoTani/IconCrud";
 import { Image } from "@mantine/core";
 export default function InfoPertanian() {
   return (
-    <section>
+    <section className="pb-5">
       {[...Array(3)]?.map((_, i) => (
         <MainCard row transparent center gap="0" key={i}>
           <MainCard
