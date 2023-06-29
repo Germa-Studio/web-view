@@ -39,7 +39,7 @@ const Navbar = () => {
               <img
                 className="hidden md:block"
                 src="/image/logo-navbar.png"
-                width={150}
+                width={200}
                 alt="Logo"
               />
               <img
@@ -100,7 +100,6 @@ const Navbar = () => {
                   <span className="flex">
                     <img
                       src="/image/icon-data-pertanian.png"
-                      className="hidden md:block"
                       width={50}
                       alt="logo data pertanian"
                     />
@@ -113,7 +112,6 @@ const Navbar = () => {
                   <span className="flex">
                     <img
                       src="/image/icon-info-pertanian.png"
-                      className="hidden md:block"
                       width={50}
                       alt="logo data pertanian"
                     />
@@ -126,7 +124,6 @@ const Navbar = () => {
                   <span className="flex">
                     <img
                       src="/image/icon-toko-pertanian.png"
-                      className="hidden md:block"
                       width={50}
                       alt="logo data pertanian"
                     />
