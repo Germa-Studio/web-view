@@ -54,7 +54,6 @@ const Navbar = () => {
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
-                blue
                 {navbar ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
