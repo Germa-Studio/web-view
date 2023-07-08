@@ -7,15 +7,58 @@ import { Image } from "@mantine/core";
 export default function InfoPertanian() {
   return (
     <section className="pb-5">
+      <MainCard row transparent center>
+        <MainCard width="80%">
+          <Image src="/image/icon-sawah.png" alt="Icon Sawah" />
+        </MainCard>
+      </MainCard>
+
+      <MainCard transparent noPadding center>
+        <MainCard width="80%">
+          <p className="text-center text-xl font-bold underline text-green-primary ">
+            ACARA KEGIATAN PERTANIAN
+          </p>
+          {[...Array(3)]?.map((_, i) => (
+            <MainCard width="30%" key={i}>
+              <p className="text-2xl font-bold underline text-green-primary">
+                Penyuluhan Tembakau
+              </p>
+              <div className="flex">
+                <Image
+                  src="/image/icon-penyuluhan.png"
+                  width={50}
+                  height={100}
+                  alt="Icon Penyuluhan"
+                />
+                <div className="pl-3">
+                  <p className="font-bold text-gray-primary">31 JUNI 2023</p>
+                  <p className="font-bold text-orange-primary">
+                    Waktu Mulai : 08.00 WIB
+                  </p>
+                  <p className="font-bold text-orange-primary">
+                    Waktu Pulang : 16.00 WIB
+                  </p>
+                  <p className="underline font-bold text-green-secondary">
+                    Tempat : Balai Merdeka Jaya
+                  </p>
+                </div>
+              </div>
+            </MainCard>
+          ))}
+        </MainCard>
+      </MainCard>
+
       {[...Array(3)]?.map((_, i) => (
         <MainCard row transparent center gap="0" key={i}>
           <MainCard
-            width="60%"
+            width="80%"
             radius="0"
             gap="0"
-            style={{ border: "solid 1px black" }}
+            // style={{ border: "solid 1px black" }}
           >
-            <h1 className="font-bold">JUDUL TERLALU BESAR</h1>
+            <h1 className="font-bold underline text-center text-green-primary">
+              JUDUL TERLALU BESAR
+            </h1>
             <MainCard transparent row>
               <Image
                 width={200}
@@ -25,17 +68,6 @@ export default function InfoPertanian() {
                 withPlaceholder
               />
               <MainCard transparent noPadding>
-                <MainCard row transparent noPadding>
-                  <p>
-                    <span className="font-medium">Dibuat Oleh : </span>Mr.
-                    Surono
-                  </p>
-                  <p>26/10/2023</p>
-                  <p>
-                    <span className="font-medium">Status : </span>
-                    Lewat/Sudah/AkanTerlakasana
-                  </p>
-                </MainCard>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                   ex corrupti veniam ut et officiis in omnis minima culpa sit
@@ -43,10 +75,19 @@ export default function InfoPertanian() {
                   ratione deserunt consectetur nisi suscipit sint! Nostrum
                   fugiat provident laudantium, unde et saepe ratione eligendi
                   mollitia aut tempore quod ullam animi id pariatur totam.
-                  <span className="italic cursor-pointer">
+                  <span className="italic cursor-pointer font-bold text-green-primary">
                     ... (Baca Selengkapnya)
                   </span>
                 </p>
+                <div className="flex justify-between">
+                  <p className="text-gray-primary">
+                    <span className="font-bold">Dibuat Oleh : </span>
+                    Mr. Surono
+                  </p>
+                  <p>
+                    <span className="font-bold">Terbit : </span>26/10/2023
+                  </p>
+                </div>
               </MainCard>
             </MainCard>
           </MainCard>
