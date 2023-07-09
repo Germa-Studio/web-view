@@ -11,7 +11,7 @@ export default {
         'green-secondary': '#6FA31D',
         'green-footer': '#6EB940',
         'orange-primary': '#F4A21C',
-        'grey-primary': '#AEAEAE'
+        'gray-primary': '#AEAEAE'
       }
     },
   },
