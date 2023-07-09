@@ -13,38 +13,40 @@ export default function InfoPertanian() {
         </MainCard>
       </MainCard>
 
-      <MainCard transparent noPadding center>
+      <MainCard transparent center>
         <MainCard width="80%">
           <p className="text-center text-xl font-bold underline text-green-primary ">
             ACARA KEGIATAN PERTANIAN
           </p>
-          {[...Array(3)]?.map((_, i) => (
-            <MainCard width="30%" key={i}>
-              <p className="text-2xl font-bold underline text-green-primary">
-                Penyuluhan Tembakau
-              </p>
-              <div className="flex">
-                <Image
-                  src="/image/icon-penyuluhan.png"
-                  width={50}
-                  height={100}
-                  alt="Icon Penyuluhan"
-                />
-                <div className="pl-3">
-                  <p className="font-bold text-gray-primary">31 JUNI 2023</p>
-                  <p className="font-bold text-orange-primary">
-                    Waktu Mulai : 08.00 WIB
-                  </p>
-                  <p className="font-bold text-orange-primary">
-                    Waktu Pulang : 16.00 WIB
-                  </p>
-                  <p className="underline font-bold text-green-secondary">
-                    Tempat : Balai Merdeka Jaya
-                  </p>
+          <MainCard row transparent noPadding center>
+            {[...Array(3)]?.map((_, i) => (
+              <MainCard width="30%" key={i}>
+                <p className="text-2xl font-bold underline text-green-primary">
+                  Penyuluhan Tembakau
+                </p>
+                <div className="flex">
+                  <Image
+                    src="/image/icon-penyuluhan.png"
+                    width={50}
+                    height={100}
+                    alt="Icon Penyuluhan"
+                  />
+                  <div className="pl-3">
+                    <p className="font-bold text-gray-primary">31 JUNI 2023</p>
+                    <p className="font-bold text-orange-primary">
+                      Waktu Mulai : 08.00 WIB
+                    </p>
+                    <p className="font-bold text-orange-primary">
+                      Waktu Pulang : 16.00 WIB
+                    </p>
+                    <p className="underline font-bold text-green-secondary">
+                      Tempat : Balai Merdeka Jaya
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </MainCard>
-          ))}
+              </MainCard>
+            ))}
+          </MainCard>
         </MainCard>
       </MainCard>
 
