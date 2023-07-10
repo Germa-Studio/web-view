@@ -35,32 +35,67 @@ export default function InfoPertanian() {
           <div className="hidden md:block">
             <div className="md:px-32 grid md:grid-cols-7">
               <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
-                <img src="/image/icon-unggulan-1.png" alt="Icon Unggulan 1" />
-                <link rel="stylesheet" href="wa.me/62896515776243" />
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281252232644"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/image/icon-unggulan-1.png" alt="Icon Unggulan 1" />
+                </a>
               </div>
               <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
-                <img src="/image/icon-unggulan-2.png" alt="Icon Unggulan 2" />
-                <link rel="stylesheet" href="wa.me/62896515776243" />
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281252232644"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/image/icon-unggulan-2.png" alt="Icon Unggulan 2" />
+                </a>
               </div>
               <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
-                <img src="/image/icon-unggulan-3.png" alt="Icon Unggulan 3" />
-                <link rel="stylesheet" href="wa.me/62896515776243" />
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281252232644"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/image/icon-unggulan-3.png" alt="Icon Unggulan 3" />
+                </a>
               </div>
               <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
-                <img src="/image/icon-unggulan-4.png" alt="Icon Unggulan 4" />
-                <link rel="stylesheet" href="wa.me/62896515776243" />
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281252232644"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/image/icon-unggulan-4.png" alt="Icon Unggulan 4" />
+                </a>
               </div>
               <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
-                <img src="/image/icon-unggulan-5.png" alt="Icon Unggulan 5" />
-                <link rel="stylesheet" href="wa.me/62896515776243" />
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281252232644"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/image/icon-unggulan-5.png" alt="Icon Unggulan 5" />
+                </a>
               </div>
               <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
-                <img src="/image/icon-unggulan-6.png" alt="Icon Unggulan 6" />
-                <link rel="stylesheet" href="wa.me/62896515776243" />
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281252232644"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/image/icon-unggulan-6.png" alt="Icon Unggulan 6" />
+                </a>
               </div>
               <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
-                <img src="/image/icon-unggulan-7.png" alt="Icon Unggulan 7" />
-                <link rel="stylesheet" href="wa.me/62896515776243" />
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281252232644"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/image/icon-unggulan-7.png" alt="Icon Unggulan 7" />
+                </a>
               </div>
             </div>
           </div>
