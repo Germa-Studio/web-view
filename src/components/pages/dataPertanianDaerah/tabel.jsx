@@ -92,8 +92,8 @@ const LaporanPenyuluh = () => {
             STATISTIK PERTUMBUHAN PERTANIAN DALAM 1 TAHUN
           </h2>
           <p className="text-right mt-4 px-5 py-5">
-            <strong>Total Data :</strong> {totalData} Data Statistik Pertumbuhan
-            Pertanian Dalam 1 Tahun
+            <strong>Jumlah Data :</strong> {totalData} Data Statistik
+            Pertumbuhan Pertanian Selama 1 Tahun
           </p>
           <div className="h-[calc(100vh-200px)] overflow-y-scroll ">
             <table className="min-w-full">
