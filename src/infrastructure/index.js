@@ -5,7 +5,7 @@ export const GetInfoTani = async()=>{
       const response = await Api.get("/info-tani");
       return response.data.infotani
     } catch (error) {
-      SweatAlert(String(error.response.data.message), 'error');
+      // SweatAlert(String(error.response.data.message), 'error');
     }
 }
 export const getEventTani = async()=>{
@@ -13,6 +13,6 @@ export const getEventTani = async()=>{
       const response = await Api.get("/event-tani");
       return response.data.infotani
     } catch (error) {
-      SweatAlert(String(error.response.data.message), 'error');
+      // SweatAlert(String(error.response.data.message), 'error');
     }
 }
