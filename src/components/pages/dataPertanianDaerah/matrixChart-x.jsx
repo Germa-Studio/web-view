@@ -1,32 +1,73 @@
 import React, { useEffect, useState } from 'react';
 import ApexCharts from 'apexcharts';
 
-function ApexChart (props){
-  let {dataSingkong,dataKedelai,dataTembakau,dataPadi} = props
-  console.log("isi "+dataSingkong)
+const ApexChart = () => {
   const [series, setSeries] = useState([
     {
-      name: "Singkong",
-      data: dataSingkong
+      name: 'Singkong',
+      data: [
+        40,
+        15,
+        8,
+        23,
+        24,
+        31,
+        45,
+        12,
+        48,
+        85,
+      ],
     },
     {
       name: 'Kedelai',
-      data: dataKedelai
+      data: [
+        14,
+        10,
+        20,
+        18,
+        14,
+        31,
+        29,
+        14,
+        42,
+        23,
+      ],
     },
     {
       name: 'Tembakau',
-      data: dataTembakau
+      data: [
+        12,
+        21,
+        18,
+        14,
+        24,
+        22,
+        25,
+        12,
+        14,
+        11,
+      ],
     },
     {
       name: 'Padi',
-      data: dataPadi
+      data: [
+        24,
+        12,
+        27,
+        38,
+        24,
+        43,
+        12,
+        32,
+        21,
+        32,
+      ],
     },
   ]);
 
   const options = {
     series,
     chart: {
-      id: 'realtime',
       type: 'area',
       stacked: false,
       height: 350,
@@ -85,27 +126,6 @@ function ApexChart (props){
   useEffect(() => {
     const chart = new ApexCharts(document.getElementById('chart1'), options);
     chart.render();
-    
-    chart.updateSeries([{
-      data: [
-        {
-          name: "Singkong",
-          data: dataSingkong
-        },
-        {
-          name: 'Kedelai',
-          data: dataKedelai
-        },
-        {
-          name: 'Tembakau',
-          data: dataTembakau
-        },
-        {
-          name: 'Padi',
-          data: dataPadi
-        },
-      ]
-    }])
 
     return () => {
       chart.destroy();

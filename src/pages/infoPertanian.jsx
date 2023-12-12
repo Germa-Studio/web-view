@@ -2,12 +2,15 @@ import MainCard from "../components/MainCard";
 import { Image } from "@mantine/core";
 import KegiatanTani from "../components/pages/InfoPertanian/kegiatanTani"
 import BeritaTani from "../components/pages/InfoPertanian/beritaTani";
+import Slider from "../components/pages/InfoPertanian/Slider";
+
 export default function InfoPertanian() {
   return (
     <section className="pb-5">
       <MainCard row transparent center>
         <MainCard width="80%">
-          <Image src="/image/icon-sawah.png" alt="Icon Sawah" />
+          {/* <Image src="/image/icon-sawah.png" alt="Icon Sawah" /> */}
+          <Slider/>
         </MainCard>
       </MainCard>
       <MainCard transparent center>

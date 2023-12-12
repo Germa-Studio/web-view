@@ -136,7 +136,7 @@ const LaporanPenyuluh = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -151,7 +151,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -166,7 +166,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -181,7 +181,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -196,7 +196,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -211,7 +211,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -226,7 +226,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -241,7 +241,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -258,7 +258,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -273,7 +273,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"
@@ -290,7 +290,7 @@ const LaporanPenyuluh = () => {
                       />
                     </div>
                   </td>
-                  <td className="sticky bg-white top-[40px] z-10 px-4 py-2 border">
+                  <td className=" bg-white top-[40px] z-10 px-4 py-2 border">
                     <div className="flex items-center">
                       <input
                         type="text"

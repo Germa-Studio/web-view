@@ -1,55 +1,27 @@
 import React from 'react';
-import ApexCharts from 'apexcharts';
+import { Chart } from "react-google-charts";
 
-const ApexChart = () => {
-  const series = [44, 55, 13, 43, 22];
+export const data = [
+  ["Task", "Hours per Day"],
+  ["Work", 11],
+  ["Eat", 2],
+  ["Commute", 2],
+  ["Watch TV", 2],
+  ["Sleep", 7],
+];
 
-  const options = {
-    series,
-    chart: {
-      width: 380,
-      type: 'pie',
-    },
-    labels: ['Padi', 'Jagung', 'Kedelai', 'Singkong', 'Tembakau'],
-    legend: {
-    position: 'right',
-    fontSize:"20px",
-    inverseOrder:true,
-    markers: {
-        radius:0,
-        width:17,
-        height:17
-        },
-    },
-    itemMargin: {
-        horizontal: 20,
-        vertical: 20
-    },
-    responsive: [
-      {
-        breakpoint: 480,
-        options: {
-          chart: {
-            width: 200,
-          },
-          legend: {
-            position: 'bottom',
-          }
-        },
-      },
-    ],
-  };
-
-  React.useEffect(() => {
-    const chart = new ApexCharts(document.getElementById('chart'), options);
-    chart.render();
-    
-    return () => {
-      chart.destroy();
-    };
-  }, []);
-
-  return <div id="chart" />;
+export const options = {
+  title: "My Daily Activities",
 };
 
-export default ApexChart;
+export default function App() {
+  return (
+    <Chart
+      chartType="PieChart"
+      data={data}
+      options={options}
+      width={"100%"}
+      height={"400px"}
+    />
+  );
+}
