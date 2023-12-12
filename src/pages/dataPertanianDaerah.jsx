@@ -53,7 +53,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className="pb-5">
+    <section className="pb-5 max-w-[90%] mx-auto">
       <MainCard transparent noPadding>
         <MainCard transparent noPadding row center>
           <MainCard transparent width="30%">

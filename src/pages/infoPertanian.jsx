@@ -6,7 +6,7 @@ import Slider from "../components/pages/InfoPertanian/Slider";
 
 export default function InfoPertanian() {
   return (
-    <section className="pb-5">
+    <section className="pb-5 max-w-[90%] mx-auto">
       <MainCard row transparent center>
         <MainCard width="80%">
           {/* <Image src="/image/icon-sawah.png" alt="Icon Sawah" /> */}

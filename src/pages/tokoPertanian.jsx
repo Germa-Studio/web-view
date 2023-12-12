@@ -6,7 +6,7 @@ import CarouselPromo from "../components/pages/TokoPertanian/carouselPromo";
 export default function InfoPertanian() {
   return (
     <section>
-      <div className="pb-5">
+      <div className="pb-5 max-w-[90%] mx-auto">
         {/* Header */}
         {/* Dekstop */}
         <div className="w-full hidden md:block">
