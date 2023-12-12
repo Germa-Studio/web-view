@@ -85,27 +85,6 @@ function ApexChart (props){
   useEffect(() => {
     const chart = new ApexCharts(document.getElementById('chart1'), options);
     chart.render();
-    
-    chart.updateSeries([{
-      data: [
-        {
-          name: "Singkong",
-          data: dataSingkong
-        },
-        {
-          name: 'Kedelai',
-          data: dataKedelai
-        },
-        {
-          name: 'Tembakau',
-          data: dataTembakau
-        },
-        {
-          name: 'Padi',
-          data: dataPadi
-        },
-      ]
-    }])
 
     return () => {
       chart.destroy();
