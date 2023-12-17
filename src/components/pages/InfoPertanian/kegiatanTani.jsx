@@ -1,6 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import MainCard from "../../MainCard";
 import { Image } from "@mantine/core";
+import { IoCalendar } from "react-icons/io5";
+import { FaClock } from "react-icons/fa6";
+import { FaBuilding } from "react-icons/fa6";
 import {getEventTani} from "../../../infrastructure"
 import {motion} from "framer-motion"
 const KegiatanTani = () => {
@@ -56,32 +59,35 @@ const KegiatanTani = () => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
   return (
-      <MainCard row transparent noPadding center className="flex-wrap">
+      <MainCard row transparent noPadding center className="flex-row">
         <motion.div className="carousel overflow-hidden cursor-grab" ref={carousel}>
           <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel inline-flex">
             {datas?.map((data, i) => (
-              <MainCard width="350px" key={i}>
-                <p className="text-2xl font-bold underline text-green-primary">
+              <div key={i} className="p-5 max-w-none min-w-fit">
+                <p className="text-2xl font-bold underline text-green-primary mb-3">
                   {data?.namaKegiatan}
                 </p>
                 <div className="flex">
                   <Image
                     src={data.fotoKegiatan}
-                    width={50}
+                    width={100}
                     height={100}
                     alt={data?.namaKegiatan}
                   />
-                  <div className="pl-3">
-                    <p className="font-bold text-gray-primary">{data.tanggalAcara}</p>
-                    <p className="font-bold text-orange-primary">
-                      Waktu Mulai : {data?.waktuAcara.split("-")[0].trim() !== '' ? `${data?.waktuAcara.split("-")[0]} WIB` : "-"}
-                    </p>
-                    <p className="font-bold text-orange-primary">
-                      Waktu Pulang : {data?.waktuAcara.split("-")[1].trim() !== '' ? `${data?.waktuAcara.split("-")[1]} WIB` : "-"}
-                    </p>
-                    <p className="underline font-bold text-green-secondary">
-                      Tempat : {data?.tempat}
-                    </p>
+                  <div className="pl-3 flex flex-col space-y-1">
+                    <div className="flex flex-row space-x-2">
+                      <IoCalendar size={20} className="fill-green-primary" />
+                      <p className="font-bold text-gray-primary">{data.tanggalAcara}</p>
+                    </div>
+                    <div className="flex flex-row space-x-2">
+                      <FaClock size={20} className="fill-green-primary"/>
+                      <p className="font-bold text-orange-primary">{data.waktuAcara}</p>
+                    </div>
+                    <div className="flex flex-row space-x-2">
+                      <FaBuilding size={20} className="fill-green-primary"/>
+                      <p className="underline font-serif text-green-secondary">{data.tempat}</p>
+                    </div>
+                    
                     {/* <p className="font-bold text-gray-primary">{data?.tanggalAcara ? formatedDate(data?.tanggalAcara.split("T")):''}</p>
                     <p className="font-bold text-orange-primary">
                       Waktu Mulai : {data?.waktuAcara.split("-")[0].trim() !== '' ? `${data?.waktuAcara.split("-")[0]} WIB` : "-"}
@@ -95,7 +101,7 @@ const KegiatanTani = () => {
 
                   </div>
                 </div>
-              </MainCard>
+              </div>
             ))}
           </motion.div>
         </motion.div>
