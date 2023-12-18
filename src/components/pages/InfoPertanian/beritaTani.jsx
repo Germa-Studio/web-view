@@ -5,6 +5,7 @@ import LinesEllipsis from 'react-lines-ellipsis'
 import { FaClock } from "react-icons/fa6";
 import { BsPersonCircle } from "react-icons/bs";
 import {GetInfoTani} from "../../../infrastructure"
+import { Link } from "react-router-dom";
 const BeritaTani = () => {
   const [datas, setDatas] = useState([
     {
@@ -33,11 +34,6 @@ const BeritaTani = () => {
   // useEffect(() => {
   //   GetInfoTani().then((data)=>setDatas(data))
   // }, [])
-  console.log(datas)
-  function handleClick(){
-    if(isFull==true) setFull(false)
-    else setFull(true)
-  }
   return (
     <>
       {datas?.map((data, i) => (
@@ -68,21 +64,15 @@ const BeritaTani = () => {
                     </div>
                   </div>
                   <div className="text-justify">
-                    {isFull===false
-                      ? <LinesEllipsis
+                    <LinesEllipsis
                           text={data?.isi}
                           maxLine='3'
                           ellipsis='......'
                           trimRight
                           basedOn='letters'
-                        />
-                      : <article>{data?.isi}</article>
-                    }
+                    />
                   </div>
-                  {isFull===false
-                    ? <h3 className="hover:text-red-500" onClick={handleClick}>Read More &gt; </h3>
-                    : <h3 className="hover:text-red-500" onClick={handleClick}>Show Less &lt; </h3>
-                  }
+                  <Link to='/info-pertanian/berita' className="hover:text-red-500">Read More &gt; </Link>
                 </MainCard>
               </MainCard>
             </MainCard>
