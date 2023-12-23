@@ -15,7 +15,7 @@ export default function InfoPertanian() {
       </MainCard>
       <MainCard transparent center>
         <MainCard width="80%">
-          <p className="text-center text-xl font-bold underline text-green-primary ">
+          <p className="text-center text-xl md:text-2xl font-bold text-green-primary ">
             ACARA KEGIATAN PERTANIAN
           </p>
           <KegiatanTani/>

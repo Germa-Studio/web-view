@@ -59,12 +59,13 @@ const KegiatanTani = () => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
   return (
+    <div className="border-t-2">
       <MainCard row transparent noPadding center className="flex-row">
         <motion.div className="carousel overflow-hidden cursor-grab" ref={carousel}>
           <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel inline-flex">
             {datas?.map((data, i) => (
               <div key={i} className="p-5 max-w-none min-w-fit">
-                <p className="text-2xl font-bold underline text-green-primary mb-3">
+                <p className="text-md md:text-xl font-bold text-green-primary mb-3">
                   {data?.namaKegiatan}
                 </p>
                 <div className="flex">
@@ -76,16 +77,16 @@ const KegiatanTani = () => {
                   />
                   <div className="pl-3 flex flex-col space-y-1">
                     <div className="flex flex-row space-x-2">
-                      <IoCalendar size={20} className="fill-green-primary" />
-                      <p className="font-bold text-gray-primary">{data.tanggalAcara}</p>
+                      <IoCalendar size={18} className="fill-green-secondary" />
+                      <p className="text-sm">{data.tanggalAcara}</p>
                     </div>
                     <div className="flex flex-row space-x-2">
-                      <FaClock size={20} className="fill-green-primary"/>
-                      <p className="font-bold text-orange-primary">{data.waktuAcara}</p>
+                      <FaClock size={18} className="fill-green-secondary"/>
+                      <p className="text-sm">{data.waktuAcara}</p>
                     </div>
                     <div className="flex flex-row space-x-2">
-                      <FaBuilding size={20} className="fill-green-primary"/>
-                      <p className="underline font-serif text-green-secondary">{data.tempat}</p>
+                      <FaBuilding size={18} className="fill-green-secondary"/>
+                      <p className="text-sm">{data.tempat}</p>
                     </div>
                     
                     {/* <p className="font-bold text-gray-primary">{data?.tanggalAcara ? formatedDate(data?.tanggalAcara.split("T")):''}</p>
@@ -106,6 +107,7 @@ const KegiatanTani = () => {
           </motion.div>
         </motion.div>
       </MainCard>
+    </div>
   )
 }
 

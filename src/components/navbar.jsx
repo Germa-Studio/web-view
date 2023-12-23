@@ -34,7 +34,7 @@ const Navbar = () => {
     >
       <div className="justify-between bg-white mx-auto lg:max-w-7xl md:items-center md:flex">
         <div className="bg-white">
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <div className="flex items-center justify-between py-2 md:py-3 md:block">
             <a href="/">
               <img
                 className="hidden md:block"
@@ -89,44 +89,41 @@ const Navbar = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center py-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
             <ul className="text-green-primary items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li onClick={() => (window.location.href = "/")}>
                 <button className="hover:font-bold hover:underline underline-offset-auto">
-                  <span className="flex">
-                    <img
+                  <span className="flex items-center justify-center">
+                    <img className="w-12"
                       src="/image/icon-data-pertanian.png"
-                      width={50}
                       alt="logo data pertanian"
                     />
-                    <p className="pt-5">Data Pertanian</p>
+                    <p className="text-sm md:text-base">Data Pertanian</p>
                   </span>
                 </button>
               </li>
               <li onClick={() => (window.location.href = "/info-pertanian")}>
                 <button className="hover:font-bold hover:underline underline-offset-auto">
-                  <span className="flex">
-                    <img
+                  <span className="flex items-center justify-center">
+                    <img className="w-12"
                       src="/image/icon-info-pertanian.png"
-                      width={50}
                       alt="logo data pertanian"
                     />
-                    <p className="pt-5">Info Pertanian</p>
+                    <p className="text-sm md:text-base">Info Pertanian</p>
                   </span>
                 </button>
               </li>
               <li onClick={() => (window.location.href = "/toko-pertanian")}>
                 <button className="hover:font-bold hover:underline underline-offset-auto">
-                  <span className="flex">
-                    <img
+                  <span className="flex items-center justify-center">
+                    <img className="w-12"
                       src="/image/icon-toko-pertanian.png"
-                      width={50}
                       alt="logo data pertanian"
                     />
-                    <p className="pt-5">Toko Pertanian</p>
+                    <p className="text-sm md:text-base">Toko Pertanian</p>
                   </span>
                 </button>
               </li>

@@ -44,26 +44,26 @@ const BeritaTani = () => {
               gap="0"
             >
               <MainCard transparent row>
-                <Image
+                <Image className="h-max"
                   width={200}
                   src={data?.fotoBerita}
                   alt="With default placeholder"
                 />
                 <MainCard transparent noPadding>
-                  <h1 className="font-bold underline text-green-primary">
+                  <h1 className="font-bold text-base md:text-2xl tracking-[1px] text-green-primary">
                     {data?.judul}
                   </h1>
                   <div className="flex flex-row space-x-5">
                     <div className="flex flex-row space-x-2">
-                      <BsPersonCircle size={20} className="fill-green-primary"/>
-                      <p className="text-gray-primary">{data?.createdBy}</p>
+                      <BsPersonCircle size={20} className="fill-gray-primary"/>
+                      <p className="text-xs sm:text-sm md:text-base text-gray-primary">{data?.createdBy}</p>
                     </div>
                     <div className="flex flex-row space-x-2">
-                      <FaClock size={20} className="fill-green-primary"/>
-                      <p>{data?.tanggal?.split("T")[0]}</p>
+                      <FaClock size={20} className="fill-gray-primary"/>
+                      <p className="text-xssm:text-sm md:text-base text-gray-primary">{data?.tanggal?.split("T")[0]}</p>
                     </div>
                   </div>
-                  <div className="text-justify">
+                  <div className="text-justify text-sm md:text-base">
                     <LinesEllipsis
                           text={data?.isi}
                           maxLine='3'
@@ -72,7 +72,7 @@ const BeritaTani = () => {
                           basedOn='letters'
                     />
                   </div>
-                  <Link to='/info-pertanian/berita' className="hover:text-red-500">Read More &gt; </Link>
+                  <Link to='/info-pertanian/berita' className="text-sm md:text-base hover:text-green-600">Read More &gt; </Link>
                 </MainCard>
               </MainCard>
             </MainCard>
