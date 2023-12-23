@@ -21,31 +21,31 @@ export default function Berita(){
         <>
             <MainCard row transparent center gap="0">
                 <MainCard
-                width="80%"
-                radius="0"
-                gap="0"
+                    width="80%"
+                    radius="0"
+                    gap="0"
                 >
                 <Link to='/info-pertanian'>
                     <IoCaretBackCircle size={40} className="fill-green-primary"/>
                 </Link>
                 <MainCard transparent row>
-                    <Image
-                    width={200}
-                    src={datas?.fotoBerita}
-                    alt="With default placeholder"
+                    <Image className="h-min"
+                        width={200}
+                        src={datas?.fotoBerita}
+                        alt="With default placeholder"
                     />
                     <MainCard transparent noPadding>
-                    <h1 className="font-bold underline text-green-primary">
+                    <h1 className="font-bold text-base md:text-2xl tracking-[1px] text-green-primary">
                         {datas?.judul}
                     </h1>
                     <div className="flex flex-row space-x-5">
-                        <div className="flex flex-row space-x-2">
-                        <BsPersonCircle size={20} className="fill-green-primary"/>
-                        <p className="text-gray-primary">{datas?.createdBy}</p>
+                        <div className="flex flex-row space-x-2 items-center justify-center">
+                            <BsPersonCircle size={20} className="fill-gray-primary"/>
+                            <p className="text-xs sm:text-sm md:text-base text-gray-primary">{datas?.createdBy}</p>
                         </div>
-                        <div className="flex flex-row space-x-2">
-                        <FaClock size={20} className="fill-green-primary"/>
-                        <p>{datas?.tanggal?.split("T")[0]}</p>
+                        <div className="flex flex-row space-x-2 items-center justify-center">
+                            <FaClock size={20} className="fill-gray-primary"/>
+                            <p className="text-xs sm:text-sm md:text-base text-gray-primary">{datas?.tanggal?.split("T")[0]}</p>
                         </div>
                     </div>
                     <div className="text-justify">

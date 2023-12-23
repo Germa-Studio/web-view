@@ -2,19 +2,20 @@
 import React from "react";
 import CarouselUnggulan from "../components/pages/TokoPertanian/carouselUnggulan";
 import CarouselPromo from "../components/pages/TokoPertanian/carouselPromo";
+import MainCard from "../components/MainCard";
 
 export default function InfoPertanian() {
   return (
     <section>
-      <div className="pb-5 max-w-[90%] mx-auto">
+      <div className="pb-5 max-w-[90%] mx-auto flex flex-col gap-12 justify-center items-center">
         {/* Header */}
         {/* Dekstop */}
-        <div className="w-full hidden md:block">
-          <div className="grid md:grid-cols-2 md:px-32 gap-5">
-            <div>
+        <MainCard className="w-[80%] hidden md:block">
+          <div className="flex justify-between">
+            <div className="w-[67%]">
               <img src="/image/icon-buah-1.png" alt="buah-1" />
             </div>
-            <div className="w-full justify-self-end">
+            <div className="">
               <div>
                 <img src="/image/icon-buah-2.png" alt="buah-2" />
               </div>
@@ -23,168 +24,173 @@ export default function InfoPertanian() {
               </div>
             </div>
           </div>
-        </div>
+        </MainCard>
         {/* Mobile */}
 
         {/* Produk Unggulan Petani */}
-        <div className="w-full">
-          <p className="text-green-primary text-center text-xl md:text-2xl hover:underline font-bold  py-5">
-            PRODUK UNGGULAN PETANI
-          </p>
-          {/* Dekstop */}
-          <div className="hidden md:block">
-            <div className="md:px-32 grid md:grid-cols-7">
-              <div className="cursor-pointer hover:bg-green-primary hover:rounded-md pl-6">
-                <a
-                  href="https://api.whatsapp.com/send?phone=6281252232644"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/image/icon-unggulan-1.png" alt="Icon Unggulan 1" />
-                </a>
-              </div>
-              <div className="cursor-pointer hover:bg-green-primary hover:rounded-md pl-6">
-                <a
-                  href="https://api.whatsapp.com/send?phone=6281252232644"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/image/icon-unggulan-2.png" alt="Icon Unggulan 2" />
-                </a>
-              </div>
-              <div className="cursor-pointer hover:bg-green-primary hover:rounded-md pl-6">
-                <a
-                  href="https://api.whatsapp.com/send?phone=6281252232644"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/image/icon-unggulan-3.png" alt="Icon Unggulan 3" />
-                </a>
-              </div>
-              <div className="cursor-pointer hover:bg-green-primary hover:rounded-md pl-6">
-                <a
-                  href="https://api.whatsapp.com/send?phone=6281252232644"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/image/icon-unggulan-4.png" alt="Icon Unggulan 4" />
-                </a>
-              </div>
-              <div className="cursor-pointer hover:bg-green-primary hover:rounded-md pl-6">
-                <a
-                  href="https://api.whatsapp.com/send?phone=6281252232644"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/image/icon-unggulan-5.png" alt="Icon Unggulan 5" />
-                </a>
-              </div>
-              <div className="cursor-pointer hover:bg-green-primary hover:rounded-md pl-6">
-                <a
-                  href="https://api.whatsapp.com/send?phone=6281252232644"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/image/icon-unggulan-6.png" alt="Icon Unggulan 6" />
-                </a>
-              </div>
-              <div className="cursor-pointer hover:bg-green-primary hover:rounded-md pl-6">
-                <a
-                  href="https://api.whatsapp.com/send?phone=6281252232644"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/image/icon-unggulan-7.png" alt="Icon Unggulan 7" />
-                </a>
+        <MainCard className="w-[80%]">
+          <div className="py-8">
+            <p className="text-lg lg:text-2xl font-bold text-green-primary text-center pb-5">
+              PRODUK UNGGULAN PETANI
+            </p>
+            <div className="hidden md:block">
+              <div className="grid md:grid-cols-7">
+                <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6281252232644"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="/image/icon-unggulan-1.png" alt="Icon Unggulan 1" />
+                  </a>
+                </div>
+                <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6281252232644"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="/image/icon-unggulan-2.png" alt="Icon Unggulan 2" />
+                  </a>
+                </div>
+                <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6281252232644"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="/image/icon-unggulan-3.png" alt="Icon Unggulan 3" />
+                  </a>
+                </div>
+                <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6281252232644"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="/image/icon-unggulan-4.png" alt="Icon Unggulan 4" />
+                  </a>
+                </div>
+                <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6281252232644"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="/image/icon-unggulan-5.png" alt="Icon Unggulan 5" />
+                  </a>
+                </div>
+                <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6281252232644"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="/image/icon-unggulan-6.png" alt="Icon Unggulan 6" />
+                  </a>
+                </div>
+                <div className="cursor-pointer hover:bg-green-primary hover:rounded-md">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6281252232644"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="/image/icon-unggulan-7.png" alt="Icon Unggulan 7" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+          {/* Dekstop */}
+          
           {/* Mobile */}
           <div className="md:hidden">
             <CarouselUnggulan />
           </div>
-        </div>
+        </MainCard>
         {/* Promo Penjual Ngawi */}
-        <div className="w-full py-5">
-          <div className="grid md:grid-cols-2 md:px-32">
-            <div>
-              <p className="text-black text-center text-2xl hover:underline font-bold py-5">
-                Promo Penjual Ngawi
-              </p>
-              <div className="flex items-center justify-center">
-                <img
-                  src="/image/icon-promo.png"
-                  width="60%"
-                  height="60%"
-                  alt="Icon Promo"
-                />
-              </div>
-            </div>
-            {/* Dekstop */}
-            <div className="w-full hidden md:block">
-              <div className="grid grid-cols-3 pt-5 pl-10 md:pl-0 gap-2 md:gap-2 md:pt-24">
-                <div>
+        <MainCard className="w-[80%]">
+          <div className="py-8">
+            <p className="text-lg lg:text-2xl font-bold text-green-primary text-center pb-5">
+              PROMO PENJUAL NGAWI
+            </p>
+            <div className="grid md:grid-cols-2">
+              <div>
+                <div className="flex items-center justify-center">
                   <img
-                    src="/image/icon-merujaya.png"
+                    src="/image/icon-promo.png"
                     width="60%"
                     height="60%"
-                    alt="Icon Merujaya"
-                    className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="/image/icon-alamjayatani.png"
-                    width="60%"
-                    height="60%"
-                    alt="Icon Alam Jaya Tani"
-                    className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="/image/icon-sida.png"
-                    width="60%"
-                    height="60%"
-                    alt="Icon Sida"
-                    className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="/image/icon-sam.png"
-                    width="60%"
-                    height="60%"
-                    alt="Icon Syari'ah Mandiri Agro"
-                    className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="/image/icon-mulyatani.png"
-                    width="60%"
-                    height="60%"
-                    alt="Icon Mulya Tani"
-                    className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="/image/icon-jagoantani.png"
-                    width="60%"
-                    height="60%"
-                    alt="Icon Jagoan Tani"
-                    className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
+                    alt="Icon Promo"
                   />
                 </div>
               </div>
-            </div>
-            {/* Mobile */}
-            <div className="md:hidden">
-              <CarouselPromo />
+              {/* Dekstop */}
+              <div className="w-full hidden md:flex items-center justify-center">
+                <div className="grid grid-cols-3 pt-5 pl-10 md:pl-0 gap-2 md:gap-2">
+                  <div>
+                    <img
+                      src="/image/icon-merujaya.png"
+                      width="60%"
+                      height="60%"
+                      alt="Icon Merujaya"
+                      className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="/image/icon-alamjayatani.png"
+                      width="60%"
+                      height="60%"
+                      alt="Icon Alam Jaya Tani"
+                      className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="/image/icon-sida.png"
+                      width="60%"
+                      height="60%"
+                      alt="Icon Sida"
+                      className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="/image/icon-sam.png"
+                      width="60%"
+                      height="60%"
+                      alt="Icon Syari'ah Mandiri Agro"
+                      className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="/image/icon-mulyatani.png"
+                      width="60%"
+                      height="60%"
+                      alt="Icon Mulya Tani"
+                      className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="/image/icon-jagoantani.png"
+                      width="60%"
+                      height="60%"
+                      alt="Icon Jagoan Tani"
+                      className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* Mobile */}
+              <div className="md:hidden">
+                <CarouselPromo />
+              </div>
             </div>
           </div>
-        </div>
+        </MainCard>
       </div>
     </section>
   );

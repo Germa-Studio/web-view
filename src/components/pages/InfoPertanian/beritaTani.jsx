@@ -44,7 +44,7 @@ const BeritaTani = () => {
               gap="0"
             >
               <MainCard transparent row>
-                <Image className="h-max"
+                <Image className="h-min"
                   width={200}
                   src={data?.fotoBerita}
                   alt="With default placeholder"
@@ -54,13 +54,13 @@ const BeritaTani = () => {
                     {data?.judul}
                   </h1>
                   <div className="flex flex-row space-x-5">
-                    <div className="flex flex-row space-x-2">
+                    <div className="flex flex-row space-x-2 items-center justify-center">
                       <BsPersonCircle size={20} className="fill-gray-primary"/>
                       <p className="text-xs sm:text-sm md:text-base text-gray-primary">{data?.createdBy}</p>
                     </div>
-                    <div className="flex flex-row space-x-2">
+                    <div className="flex flex-row space-x-2 items-center justify-center">
                       <FaClock size={20} className="fill-gray-primary"/>
-                      <p className="text-xssm:text-sm md:text-base text-gray-primary">{data?.tanggal?.split("T")[0]}</p>
+                      <p className="text-xs sm:text-sm md:text-base text-gray-primary">{data?.tanggal?.split("T")[0]}</p>
                     </div>
                   </div>
                   <div className="text-justify text-sm md:text-base">

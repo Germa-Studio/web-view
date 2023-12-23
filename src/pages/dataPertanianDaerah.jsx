@@ -20,8 +20,6 @@ export default function DataPertanianDaerah() {
   const fetchData = async() => {
     const randMonth = parseInt(Math.random() * (12 - 1) + 1);;
     let randNumber = Math.floor(Math.random() * 10);
-
-    console.log("hei")
     
     dataSingkong[randMonth-1] += randNumber;
     randNumber = Math.floor(Math.random() * 10);
