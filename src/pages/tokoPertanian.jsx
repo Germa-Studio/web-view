@@ -10,8 +10,8 @@ export default function InfoPertanian() {
       <div className="pb-5 max-w-[90%] mx-auto flex flex-col gap-12 justify-center items-center">
         {/* Header */}
         {/* Dekstop */}
-        <MainCard className="w-[80%] hidden md:block">
-          <div className="flex justify-between">
+        {/* <MainCard className="w-[80%] hidden md:block"> */}
+          <div className="hidden w-[80%] md:flex justify-between">
             <div className="w-[67%]">
               <img src="/image/icon-buah-1.png" alt="buah-1" />
             </div>
@@ -24,7 +24,7 @@ export default function InfoPertanian() {
               </div>
             </div>
           </div>
-        </MainCard>
+        {/* </MainCard> */}
         {/* Mobile */}
 
         {/* Produk Unggulan Petani */}
@@ -126,7 +126,7 @@ export default function InfoPertanian() {
                 </div>
               </div>
               {/* Dekstop */}
-              <div className="w-full hidden md:flex items-center justify-center">
+              <div className="w-full flex items-center justify-center">
                 <div className="grid grid-cols-3 pt-5 pl-10 md:pl-0 gap-2 md:gap-2">
                   <div>
                     <img
@@ -134,7 +134,7 @@ export default function InfoPertanian() {
                       width="60%"
                       height="60%"
                       alt="Icon Merujaya"
-                      className="cursor-pointer hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
+                      className="cursor-pointer w-3 md:w-8 hover:py-2 hover:px-2 hover:bg-green-primary hover:rounded-md"
                     />
                   </div>
                   <div>
